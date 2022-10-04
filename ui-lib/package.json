@@ -1,0 +1,35 @@
+{
+  "name": "ui-lib",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "build-lib": "npx webpack --config webpack.config.js",
+    "build-lib-prod": "npx webpack --config webpack.config.js --env=production",
+    "serve": "npx http-serve build --cors='*' -c10",
+    "build-serve": "npm run build-lib && npm run serve"
+  },
+  "dependencies": {
+    "@nivo/core": "^0.80.0",
+    "@nivo/radar": "^0.80.0",
+    "next": "12.3.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.19.3",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/node": "18.8.0",
+    "@types/react": "18.0.21",
+    "@types/react-dom": "18.0.6",
+    "babel-loader": "^8.2.5",
+    "eslint": "8.24.0",
+    "eslint-config-next": "12.3.1",
+    "typescript": "4.8.4",
+    "webpack-cli": "^4.10.0"
+  }
+}
