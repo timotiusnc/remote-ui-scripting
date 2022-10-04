@@ -49,6 +49,18 @@ You can check the output files (from Webpack) on `build/` folder.
 
 ---
 
+### Live Demo
+
+Link: https://remote-ui-scripting.vercel.app/.
+
+The live demo is using [this components map](https://assets.analytics.glair.ai/scripts/charts_dashboards_sample.json).
+
+If you run this demo locally, the map in [host/src/util/componentsMapper.ts](host/src/util/componentsMapper.ts) will be used instead.
+
+You can change the mapping by exposing public environment variable `NEXT_PUBLIC_COMPONENTS_MAP_JSON` (see `host/.env.example` file).
+
+---
+
 ### References
 
 1. [Paciolan/remote-component](https://github.com/Paciolan/remote-component)
