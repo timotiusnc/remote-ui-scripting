@@ -25,15 +25,4 @@ const useRemoteComp = (componentId: string) => {
   return { comp, loading };
 };
 
-/**
- * Sample input: http://localhost:8080/default/dashboards/Default.js
- * Sample output: default/dashboards/Default
- * @param url URL of the remote component
- * @returns Library name to be accessed via global window object
- */
-const getCompName = (url: string) => {
-  const tokens = url.split("/");
-  return tokens.slice(-3).join("/").replace(".js", "");
-};
-
 export { useRemoteComp };

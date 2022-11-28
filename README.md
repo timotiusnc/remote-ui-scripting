@@ -31,7 +31,7 @@ Make sure you have already host the UI-components locally too (see `UI-Lib` sect
 
 ### UI-Lib
 
-`UI-Lib` is also an ordinary Next.js app (can be substituted with other React meta frameworks). However it is not meant to be deployed as a Next.js app. The Next.js app only serves as a test-bed (so we can leverage Hot Module Reloading feature from Next.js).
+`UI-Lib` is an ordinary Next.js app as well (can be substituted with other React meta frameworks). However it is not meant to be deployed as a Next.js app. The Next.js app only serves as a development framework (e.g. so we can leverage Hot Module Reloading feature from Next.js).
 
 The output of `UI-Lib` is the UI-components. One UI-component corresponds to one .js file.
 

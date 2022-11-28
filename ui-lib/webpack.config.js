@@ -9,7 +9,7 @@
  * Author: yourname (youremail)
  * Created at: December 24th 2021
  * -----
- * Last Modified: October 4th 2022
+ * Last Modified: November 28th 2022
  * Modified By: Timotius Nugroho Chandra (timotius.n.chandra@gdplabs.id)
  * -----
  * Copyright (c) 2021 GDP LABS. All rights reserved.
@@ -29,11 +29,14 @@ module.exports = (env) => {
       const paths = glob.sync("./src/components/**/index.tsx");
       const retval = {};
       paths.forEach((path) => {
+        // The entry is all index.tsx files under components folder
+        // The libName will be derived from the folder name
+        //  sample 1: "./src/components/Bar/index.tsx" -> "Bar"
+        //  sample 2: "./src/components/Foo/index.tsx" -> "Foo"
         const tokens = path.split("/");
         const libName = tokens.slice(-2, -1).join("/");
         retval[libName] = path;
       });
-      console.log(retval);
       return retval;
     },
     optimization: {
