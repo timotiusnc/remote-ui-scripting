@@ -20,7 +20,7 @@ const Home: NextPage = () => {
         </h1>
 
         <div style={{ height: "500px", width: "500px" }}>
-          <Radar data={radarData} />
+          <Radar payload={{ data: radarData }} />
         </div>
 
         <p className={styles.description}>

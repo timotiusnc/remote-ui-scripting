@@ -1,4 +1,4 @@
-## UI-Scripting
+## Remote UI-Scripting
 
 This is a sample application to demonstrate how to dynamically import independently-deployed UI-components from URLs.
 

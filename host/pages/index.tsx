@@ -55,15 +55,13 @@ const ErrorFallback: React.FC<FallbackProps> = ({ error }) => {
   );
 };
 
-const RemoteComponentPicker: React.FC<{ componentId: string }> = ({
-  componentId,
-}) => {
+const RemoteComponentPicker = ({ componentId }: { componentId: string }) => {
   const RemoteComponent = useRemoteComp(componentId);
   if (!RemoteComponent.loading) {
-    return <RemoteComponent.comp.default data={radarData} />;
+    return <RemoteComponent.comp.default payload={{ data: radarData }} />;
   }
 
-  return <>Loading component {componentId}</>;
+  return <div>Loading component {componentId}</div>;
 };
 
 const RemoteComponentWithErrorBoundary = withErrorBoundary(

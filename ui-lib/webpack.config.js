@@ -5,14 +5,6 @@
     'Bar': './src/components/Bar/index.tsx',
     'Foo': './src/components/Foo/index.tsx',
   }
- *
- * Author: yourname (youremail)
- * Created at: December 24th 2021
- * -----
- * Last Modified: November 28th 2022
- * Modified By: Timotius Nugroho Chandra (timotius.n.chandra@gdplabs.id)
- * -----
- * Copyright (c) 2021 GDP LABS. All rights reserved.
  */
 
 const path = require("path");
